@@ -11,9 +11,10 @@
         "prettier": "prettier --check src/**/*.ts",
         "prettier:fix": "prettier --write src/**/*.ts",
         "prepare": "husky install",
-        "test": "jest --watchAll --no-cache --detectOpenHandles --forceExit",
-        "test:watch": "jest --watch",
-        "test:coverage": "jest --coverage"
+        "test": "jest  --no-cache --detectOpenHandles --forceExit",
+        "test:watch": "jest --watchAll --no-cache --detectOpenHandles --forceExit",
+        "test:coverage": "jest --coverage",
+        "precommit": "lint-staged"
     },
     "jest": {
         "testEnvironment": "node",
